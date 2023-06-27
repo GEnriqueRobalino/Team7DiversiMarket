@@ -48,7 +48,6 @@ const deleteClient = (req, res) => {
         .catch(err => res.status(501).send(err.message));
 };
 
-
 const getClientsforCity = (req, res) => {
     Client.find({ciudad: req.body.ciudad})
         .then(clients => { 
