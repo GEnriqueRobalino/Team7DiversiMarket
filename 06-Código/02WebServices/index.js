@@ -17,4 +17,4 @@ mongoose.connect(
         app.listen(portParemeter,() => {
             console.log(`Server is running on port ${portParemeter}`)
         })
-    }).catch(err => console.log("Error al conectarse a la base de datos"));
+    }).catch(err => console.log("Error connecting to the database"));
