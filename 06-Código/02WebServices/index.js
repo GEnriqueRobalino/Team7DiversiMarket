@@ -15,6 +15,6 @@ mongoose.connect(
         { useNewUrlParser: true }
     ).then(() => {
         app.listen(portParemeter,() => {
-        console.log(`Server is running on port ${portParemeter}`)
+            console.log(`Server is running on port ${portParemeter}`)
         })
     }).catch(err => console.log("Error al conectarse a la base de datos"));
