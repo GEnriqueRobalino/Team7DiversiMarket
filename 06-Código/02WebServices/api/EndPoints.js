@@ -19,4 +19,5 @@ router.delete('/deleteProducto', ProductoController.deleteProducto);
 router.get('/productos/daysToExpiration', ProductoController.calculateDaysToExpiration);
 router.get('/productos/expiration', ProductoController.expiration);
 router.get('/productos/profit', ProductoController.getProfit);
+
 module.exports = router;
