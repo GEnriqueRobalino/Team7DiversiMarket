@@ -76,5 +76,4 @@ const getProfit = (req, res) => {
       .catch(err => res.status(500).send(err.message));
 };
 
-
 module.exports = { createProducto, deleteProducto, getProducto, updateProducto, calculateDaysToExpiration, expiration, getProfit };
