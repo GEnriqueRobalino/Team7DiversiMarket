@@ -59,6 +59,7 @@ const getClientsforCity = (req, res) => {
         })
         .catch(err => res.status(500).send(err.message));
 };
+
 module.exports = { createClient, getClients, updateClient, deleteClient, getClientsforCity };
 
 // Función auxiliar para verificar si un string contiene números
