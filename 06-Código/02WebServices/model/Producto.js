@@ -9,7 +9,8 @@ const ProductoSchema = new Schema({
     precio: {type: Number},
     proveedor: {type: String},
     fechaf: {type: Date},
-    fechav: {type: Date}
+    fechav: {type: Date},
+
 })
 
 module.exports = Producto = mongoose.model('Producto', ProductoSchema)
