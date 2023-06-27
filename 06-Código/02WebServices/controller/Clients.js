@@ -1,5 +1,10 @@
 const Client = require('../model/Client');
 
+// Función auxiliar para verificar si un string contiene números
+function containsNumbers(str) {
+    return /\d/.test(str);
+}
+
 const createClient = (req, res) => {
     // Validar reglas de negocio
     if (containsNumbers(req.body.nombre) || containsNumbers(req.body.apellido) || containsNumbers(req.body.ciudad)) {
@@ -61,8 +66,3 @@ const getClientsforCity = (req, res) => {
 };
 
 module.exports = { createClient, getClients, updateClient, deleteClient, getClientsforCity };
-
-// Función auxiliar para verificar si un string contiene números
-function containsNumbers(str) {
-    return /\d/.test(str);
-}
