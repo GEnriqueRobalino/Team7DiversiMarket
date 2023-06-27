@@ -9,6 +9,7 @@ router.get('/clients', ClientController.getClients);
 router.put('/updateClient', ClientController.updateClient);
 router.delete('/deleteClient', ClientController.deleteClient);
 router.get('/clientsforCity', ClientController.getClientsforCity);
+
 // Rutas para Productos
 router.post('/addProducto', ProductoController.createProducto);
 router.get('/productos', ProductoController.getProducto);
