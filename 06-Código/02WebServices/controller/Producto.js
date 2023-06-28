@@ -1,4 +1,3 @@
-const Client = require('../model/Client');
 const Producto = require('../model/Producto');
 const moment = require('moment');
 
@@ -19,16 +18,10 @@ const createProducto = (req, res) => {
         .catch(err => res.status(500).json(err.message));
 };
 
-const getProducto = (req, res) => {
+const getProductos = (req, res) => {
     Producto.find()
         .then(producto => res.status(200).json(producto))
         .catch(err => res.status(500).send(err.message));
-};
-
-const deleteProducto = (req, res) => {
-    Producto.findOneAndDelete({ name: req.body.name })
-        .then(pro => res.status(200).send(pro))
-        .catch(err => res.status(501).send(err.message));
 };
 
 const updateProducto = (req, res) => {
@@ -39,6 +32,12 @@ const updateProducto = (req, res) => {
     )
         .then(prod => res.status(200).send(prod))
         .catch(err => res.status(500).send(err.message));
+};
+
+const deleteProducto = (req, res) => {
+  Producto.findOneAndDelete({ name: req.body.name })
+      .then(pro => res.status(200).send(pro))
+      .catch(err => res.status(501).send(err.message));
 };
 
 const expiration = (req, res) => {
@@ -76,4 +75,5 @@ const getProfit = (req, res) => {
       .catch(err => res.status(500).send(err.message));
 };
 
-module.exports = { createProducto, deleteProducto, getProducto, updateProducto, calculateDaysToExpiration, expiration, getProfit };
+
+module.exports = { createProducto, deleteProducto, getProductos, updateProducto, calculateDaysToExpiration, expiration, getProfit };
