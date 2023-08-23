@@ -1,3 +1,5 @@
+//Codificado por: Guashpa Wilfrido
+
 import React from 'react';
 import InformacionCliente from '../componentes/InformacionCliente';
 
