@@ -1,4 +1,4 @@
-////Codificado por: Luna Karla
+//Codificado por: Luna Karla
 
 import React, { useState, useEffect } from 'react';
 import { buscarArticulos } from '../servicios/axios';
