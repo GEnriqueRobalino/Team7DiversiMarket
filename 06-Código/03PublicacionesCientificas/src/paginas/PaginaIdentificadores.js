@@ -1,3 +1,5 @@
+////Codificado por: Luna Karla
+
 import React, { useState, useEffect } from 'react';
 import { buscarArticulos } from '../servicios/axios';
 import TablaIdentificadores from '../componentes/TablaIdentificadores';
