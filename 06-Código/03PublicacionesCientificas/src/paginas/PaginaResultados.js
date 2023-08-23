@@ -1,3 +1,5 @@
+//Codificado por: Garzón César
+
 import React, { useState } from 'react';
 import BarraBusqueda from '../componentes/BarraBusqueda';
 import TablaArticulos from '../componentes/TablaArticulos';
