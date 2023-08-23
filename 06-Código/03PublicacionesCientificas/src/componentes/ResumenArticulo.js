@@ -1,3 +1,5 @@
+//Codificado por: Caisaguano Diana
+
 import React, { useEffect, useState } from 'react';
 import { obtenerResumen } from '../servicios/axios';
 
