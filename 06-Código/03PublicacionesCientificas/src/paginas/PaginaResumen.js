@@ -1,3 +1,5 @@
+//Codficado por: Caisaguano Diana
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ResumenArticulo from '../componentes/ResumenArticulo';
