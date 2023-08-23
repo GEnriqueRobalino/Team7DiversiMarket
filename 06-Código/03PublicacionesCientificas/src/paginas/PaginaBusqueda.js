@@ -1,11 +1,9 @@
+//Codificado por: Robalino Gabriel
+
 import React, { useState } from 'react';
 import BarraBusqueda from '../componentes/BarraBusqueda';
 import TablaArticulos from '../componentes/TablaArticulos';
 import { buscarArticulos } from '../servicios/axios';
-
-
-
-
 
 const PaginaBusqueda = () => {
   const [articulos, establecerArticulos] = useState([]);
