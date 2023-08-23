@@ -1,3 +1,5 @@
+//Codificado por: Guashpa Wilfrido
+
 import React, { useEffect, useState } from "react";
 import { obtenerInformacionCliente } from "../servicios/axios";
 import { Box, Typography } from "@mui/material";
