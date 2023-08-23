@@ -17,7 +17,6 @@ const TablaArticulos = ({ articulos }) => {
         Buscar por ID
         
       </Button>
-      <h1></h1>
       <Table style={{ borderCollapse: 'collapse', width: '100%', border: '2px solid #1C2833' }}>
         <TableHead>
           <TableRow style={{ backgroundColor: '#5DADE2', border: '2px solid #1C2833' }}>
